@@ -38,7 +38,7 @@ gulp.task('sass', function() {
         cascade: false
       }))
       .pipe(csso())
-    .pipe(sourcemaps.write('maps'))
+    // .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest('dest/css'))
     .pipe(browserSync.reload({stream:true}))
 });
