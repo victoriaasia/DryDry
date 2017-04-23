@@ -42,14 +42,15 @@
   color: #fff
   text-transform: uppercase
   line-height: 1.375
-  font-family: 'k-bold'
+  font-family: Geometria, sans-serif
+  font-weight: 500
   z-index: 999
   &__content
     background: $orange
     white-space: nowrap
     span
-      font-size: em(19)
-      font-family: 'k-black'
+      font-size: em(21)
+      font-weight: 700
   &__hidden
     display: none
 
@@ -141,10 +142,13 @@
     background: url('../assets/img/arrow.png') no-repeat
     background-size: cover
     position: absolute
-    bottom: 20px
+    bottom: 18px
     left: 238px
     width: 35px
     height: 40px
+    animation: fly 2s infinite
+    animation-timing-function: linear
+    transition: all 1s ease
     @include bp-table
       left: 50%
       transform: translateX(-50%)
@@ -193,7 +197,7 @@
   .d-promo
     bottom: 33px
     left: 0
-    font-size: em(16)
+    font-size: em(15)
     @include bp-table
       display: none
     &:hover
@@ -209,9 +213,8 @@
       width: 205px
       padding: 10px 3px 10px 15px
       span
-        font-size: em(17)
-        font-family: 'k-black'
-        2
+        font-size: em(21)
+        font-weight: 700
 
 .d-third
   @include bp-table
