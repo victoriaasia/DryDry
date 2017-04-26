@@ -394,6 +394,7 @@
       .d-third .d-promo__content {
         padding: 15px 15px 13px 28vw;
         height: auto;
+        width: 100%;
         font-size: 4vw; }
         .d-third .d-promo__content span {
           font-size: 7vw; } }
